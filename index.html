@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>TicTacJoe</title>
+    <audio src="./Resources/Move Sound.mp3" id="user-move-sound"></audio>
+    <audio src="./Resources/Start Game Sound.mp3" id="start-game-sound"></audio>
+    <audio src="./Resources/End Game Sound.mp3" id="end-game-sound"></audio>
+</head>
+<body>
+    <header>
+        <h1>TicTacJoe</h1>
+        <h2>Play TicTacToe against a computer programmed by Joe!</h2>
+    </header>
+    <main>
+        
+        <section id="dialog-box" class="dialog-box">
+            <section class="stat-header">
+                <h3>Multiplayer Stats</h3>
+                <section id="multiplayer-stats" class="stat-container">
+                    <div id="x-wins" class="stat-box">
+                        <h4>X-Wins</h4>
+                        <div class="x-wins-count">
+                            <p id="x-wins-count-value" class="stat-value">0</p>
+                        </div>
+                    </div>
+                    <div id="o-wins" class="stat-box">
+                        <h4>O-Wins</h4>
+                        <div class="o-wins-count">
+                        <p id="o-wins-count-value" class="stat-value">0</p>
+                        </div>
+                    </div>
+                    <div id="total-multiplayer-games" class="stat-box stat-box-wide" >
+                        <h4>Total Multiplayer Games</h4>
+                        <div class="total-mp-games-count">
+                            <p id="total-mp-games-count-value" class="stat-value">0</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <a href="#dialog-box">
+                <p id="dialog-box-content">Game Ready! &#128515; </p>
+            </a>
+            <section class="stat-header">
+                <h3>Single-Player Stats</h3>
+                <section id="Single-Player Stats" class="stat-container">
+                    <div id="computer-wins" class="stat-box">
+                        <h4>Computer-Wins</h4>
+                        <div class="computer-wins-count">
+                            <p id="computer-wins-count-value" class="stat-value">0</p>
+                        </div>
+                    </div>
+                    <div id="user-wins" class="stat-box">
+                        <h4>User-Wins</h4>
+                        <div class="user-wins-count">
+                        <p id="user-wins-count-value" class="stat-value">0</p>
+                        </div>
+                    </div>
+                    <div id="total-single-player-games" class="stat-box stat-box-wide">
+                        <h4>Total Single-Player Games</h4>
+                        <div class="total-sp-games-count">
+                            <p id="total-sp-games-count-value" class="stat-value">0</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="game-area">
+            <section class="space-left">
+            </section>
+            <section class="buttons-left button-board">
+                <button id="start-multi">Start Multiplayer Game</button>
+                <button id="start-single" class="first-start-single">Start Single Player Game</button>
+            </section>
+            <section id='game-board' class="game-board">
+                <div class="playing-space" id ="ps-0">-</div>
+                <div class="playing-space" id ="ps-1">-</div>
+                <div class="playing-space" id ="ps-2">-</div>
+                <div class="playing-space" id ="ps-3">-</div>
+                <div class="playing-space" id ="ps-4">-</div>
+                <div class="playing-space" id ="ps-5">-</div>
+                <div class="playing-space" id ="ps-6">-</div>
+                <div class="playing-space" id ="ps-7">-</div>
+                <div class="playing-space" id ="ps-8">-</div>
+            </section>
+            <section class="buttons-right button-board">
+                <button id="start-single" class="second-start-single">Start Single Player Game</button>
+            </section>
+            <section class="space-right">
+                
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        Originated by JosephTimmer90.com
+    </footer>
+    
+</body>
+</html>
