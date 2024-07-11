@@ -34,7 +34,8 @@ function playEndGameSound() {
 }
 function addStartGameSoundEvent(){
     document.getElementById('start-multi').addEventListener('click', playStartGameSound);
-    document.getElementById('start-single').addEventListener('click', playStartGameSound);
+    document.getElementById('start-single-1').addEventListener('click', playStartGameSound);
+    document.getElementById('start-single-2').addEventListener('click', playStartGameSound);
 }
 function addUserMoveSoundEvent(){
     document.getElementById('game-board').addEventListener("click", playUserMoveSound);
@@ -673,4 +674,5 @@ function computerMoveRound4(){
     }
 }
 
-document.getElementById('start-single').addEventListener('click', startSinglePlayerGame);
+document.getElementById('start-single-1').addEventListener('click', startSinglePlayerGame);
+document.getElementById('start-single-2').addEventListener('click', startSinglePlayerGame);
